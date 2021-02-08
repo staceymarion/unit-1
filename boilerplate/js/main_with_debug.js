@@ -108,20 +108,21 @@ function addEvents(){
 			
 			} else {
 				color += ")";
+			};
+
+			$(this).css('color', color);
 		};
+	});
 
-		$(this).css('color', color);
-	};
-
-	function clickme(){
+	function clickme() {
 		alert('Hey, you clicked me!');
 	};
 
-	$("table").on('click', clickme); {
+		$("table").on('click', clickme);
 
 	};
-});
-};
 
 //call the initialize function when the document has loaded
 $(document).ready(initialize);
+
+
